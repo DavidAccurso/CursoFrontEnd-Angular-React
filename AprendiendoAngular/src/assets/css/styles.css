@@ -121,24 +121,6 @@ body {
     text-underline-position: under  !important;
 }
 
-.year-green {
-    display: block;
-    background: green;
-    color: white;
-    padding: 5px;
-    width: 100px;
-    text-align: center;
-}
-
-.year-red {
-    display: block;
-    background: red;
-    color: var(--almost-white-color);
-    padding: 5px;
-    width: 100px;
-    text-align: center;
-}
-
 #slider {
     width: 100%;
     height: 350px;
@@ -328,6 +310,25 @@ input[type="text"]:hover {
 
 .article-item .image-wrap img {
     height: 100%;
+    width: 100px;
+    text-align: center;
+}
+
+.year-green {
+    display: block;
+    background: green;
+    color: white;
+    padding: 3px 1px;
+    width: 100px;
+    text-align: center;
+}
+
+.year-red {
+    display: block;
+    background: red;
+    color: white;
+    padding: 3px 1px;
+    width: 100px;
     text-align: center;
 }
 
