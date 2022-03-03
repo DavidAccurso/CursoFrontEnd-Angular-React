@@ -112,11 +112,31 @@ body {
     transition: 300ms all;
 }
 
-#menu a:hover {
+#menu a:hover, .active {
     text-decoration: none;
-    color: var(--secodary-color);
+    color: #f13e3e !important;
     font-size: 19px;
-    transition: 400ms all;
+    transition: 500ms all;
+    text-decoration: underline  !important;
+    text-underline-position: under  !important;
+}
+
+.year-green {
+    display: block;
+    background: green;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.year-red {
+    display: block;
+    background: red;
+    color: var(--almost-white-color);
+    padding: 5px;
+    width: 100px;
+    text-align: center;
 }
 
 #slider {
@@ -140,6 +160,7 @@ body {
 .btn-white {
     display: block;
     background: var(--white-color);
+    color: var(--gray-color);
     width: 100px;
     height: 35px;
     padding: 10px;
@@ -297,7 +318,7 @@ input[type="text"]:hover {
 }
 
 .article-item .image-wrap {
-    width: 130px;
+    /* width: 130px; */
     height: 130px;
     overflow: hidden;
     float: left;
