@@ -1,14 +1,16 @@
 <header id="header">
     <div class="center">
         <!-- Logo -->
-        <div id="logo">
-            <img src="assets/images/logo-angular.svg" alt="logo" class="app-logo" />
-            <span id="brand">    
-                <a href="index.html">
+        <a [routerLink]="['/home']">
+            <div id="logo">
+                <img src="assets/images/logo-angular.svg" alt="logo" class="app-logo" />
+                <span id="brand">
+
                     <strong>Master</strong>Angular
-                </a>
-            </span>
-        </div>
+
+                </span>
+            </div>
+        </a>
         <!-- Menu navegacion -->
         <nav id="menu">
             <ul>
