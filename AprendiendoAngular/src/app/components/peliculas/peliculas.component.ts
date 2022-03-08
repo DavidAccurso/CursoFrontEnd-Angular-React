@@ -27,4 +27,7 @@ export class PeliculasComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  mostrarFavorita(event: Event){
+    console.log(event);
+  }
 }
