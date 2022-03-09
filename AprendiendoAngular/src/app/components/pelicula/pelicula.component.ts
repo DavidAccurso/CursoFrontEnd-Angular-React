@@ -17,6 +17,9 @@ export class PeliculaComponent implements OnInit {
   }
 
   seleccionar(event: any, pelicula: Pelicula){
-
+    this.MarcarFavorita.emit({
+      pelicula: pelicula
+    })
   }
 }
+
