@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+//Http
+import { HttpClientModule } from '@angular/common/http';
+
 //ruteo
 import { routing, appRoutingProviders } from './app.routing';
 
@@ -17,6 +20,12 @@ import { PeliculasComponent } from './components/peliculas/peliculas.component';
 import { ErrorComponent } from './components/error/error.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 
+//Pipe
+import { EsParPîpe } from './pipes/espar.pipe';
+
+//forms
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,11 +39,14 @@ import { PeliculaComponent } from './components/pelicula/pelicula.component';
     PaginaComponent,
     PeliculasComponent,
     ErrorComponent,
-    PeliculaComponent
+    PeliculaComponent,
+    EsParPîpe
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

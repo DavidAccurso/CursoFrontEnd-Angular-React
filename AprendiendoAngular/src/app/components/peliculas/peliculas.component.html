@@ -3,20 +3,16 @@
 <div class="center">
     <section id="content" class="content">
 
-        <div id="favorita">
+        <div id="favorita" *ngIf="favorita">
             <h2 class="subheader">
                 Pelicula favorita:
             </h2>
-            {{ favorita }}
+            <h4>{{ favorita.title | uppercase }}</h4>
+            <h5>{{ favorita.year }}</h5>
+
+            <h6>{{ fecha | date: 'longDate' }}</h6>
+            <h6>{{ fecha | espar }}</h6>
         </div>
-
-<!-- 
-        <h1 class="subheader">Listado de peliculas</h1>
-
-        <div *ngIf="peliculas.length <= 3">Hay pocas peliculas:</div>
-        <div *ngIf="peliculas.length > 3">Hay muchas peliculas:</div>
-
-        {{ peliculas.length }} -->
 
         <div id="articles" *ngIf="peliculas">
 
