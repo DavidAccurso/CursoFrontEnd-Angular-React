@@ -19,8 +19,20 @@ export class ArticleService {
         return "sv article";
     }
 
-    getArticles(): Observable<any> {
-        return this._http.get(this.url + '/articles/articles/');
+    getArticles(last: any = null): Observable<any> {
+        let articles: string = '/articles/';
+
+        if(last != null){
+            articles = '/articles/true'
+        }
+
+        console.log(this.url + articles);
+        return this._http.get(this.url + articles);
+    }
+
+    getArticle(id: string): Observable<any>{
+        console.log(this.url + '/article/' + id);
+        return this._http.get(this.url + '/article/' + id);
     }
 
 }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MomentModule } from 'angular2-moment';
 
 //Http
 import { HttpClientModule } from '@angular/common/http';
@@ -25,6 +26,8 @@ import { EsParPîpe } from './pipes/espar.pipe';
 
 //forms
 import { FormsModule } from '@angular/forms';
+import { ArticlesComponent } from './components/articles/articles.component';
+import { ArticleComponent } from './components/article/article.component';
 
 @NgModule({
   declarations: [
@@ -40,13 +43,16 @@ import { FormsModule } from '@angular/forms';
     PeliculasComponent,
     ErrorComponent,
     PeliculaComponent,
-    EsParPîpe
+    EsParPîpe,
+    ArticlesComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
     routing,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MomentModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
